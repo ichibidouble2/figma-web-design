@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+:root {
+  --bg-1: #ffff;
+  --bg-2: #74C69D;
+  --color-text: #DCF1E6;
+  --font: "Reddit Sans Condensed", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body {
+  font-family: var(--font);
+  color: var(--color-text);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1200px) {
+  .container{
+      max-width: 960px;
+  }
+}
+
+@media (max-width: 992px){
+  .container{
+      max-width: 720px;
+  }
+}
+@media (max-width: 768px){
+  .container{
+      max-width: 540px;
+  }
+}
+@media (max-width: 576px){
+  .container{
+      max-width: 100%;
+  }
+}
