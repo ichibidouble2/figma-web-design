@@ -31,7 +31,7 @@
 .header .inner-wrapMobi {
   position: relative;
   display: none;
-  height: 100vh;
+  height: 50vh;
   padding: 20px 0;
 }
 .header .inner-wrapMobi .inner-logo {
@@ -129,9 +129,10 @@
 
 /* Section one  */
 .section-one {
-  z-index: -1;
   position: sticky;
-  top: 90px;
+  top: 90px; /* Hoặc vị trí bạn muốn */
+  left: 0;
+  width: 100%;
   padding: 50px 0;
   background: var(--bg-2);
 }
@@ -421,6 +422,7 @@
   align-items: center;
 }
 .footer .inner-social ul {
+  text-align: center;
   display: flex;
   list-style: none;
 }
@@ -434,4 +436,29 @@
   font-size: 20px;
   font-weight: 600;
 }
+@media (max-width: 767.98px) {
+  .footer .inner-wrap {
+    flex-wrap: wrap;
+  }
+  .footer .inner-social {
+    width: 100%;
+  }
+  .footer .inner-social ul li {
+    width: calc(100%/7 - 5px);
+  }
+  .footer .inner-content {
+    width: 100%;
+    text-align: center;
+  }
+}
 /* End Footer  */
+
+/* z-index */
+.section-one {
+  z-index: 1;
+}
+.section-social, .section-three, .section-two, .our-talents, .footer {
+  position: relative;
+  z-index: 2;
+}
+/* End z-index */

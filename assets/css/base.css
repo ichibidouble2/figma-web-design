@@ -22,7 +22,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -48,5 +48,7 @@ body {
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
